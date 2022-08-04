@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <!-- main content -->
+    <div class="main">
+
+        <!-- header section -->
+        <header class="header">
+            <div class="container">
+                <div class="row flex-end">
+                    <button type="button" class="nav-toggle">
+                        <span></span>
+                    </button>
+                    <nav class="nav">
+                        <div class="nav-inner">
+                            <ul>
+                                <li><a href="#home" class="nav-item link-item">Home</a></li>
+                                <li><a href="#about" class="nav-item link-item">About</a></li>
+                                <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+                                <li><a href="#contact" class="nav-item link-item">Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        
+        
+        <section class="home-section active" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="home-text">
+                        <p>Hello I'm</p>
+                        <h1>Debayan Pradhan</h1>
+                        <h2>Computer Science and Engineering Student</h2>
+
+                        <a href="#about" class="btn link-item">More About Me</a>
+                        <a href="cv/DebayanPradhan_CV.pdf" class="btn" download="cv/DebayanPradhan_CV.pdf">Download CV</a>
+                    </div>
+                        <div class="home-image">
+                            <div class="img-box">
+                                <img src="images/photo_2022-08-02_18-36-57.jpg" alt="Profile Photo">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section -->
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>&lt;h2&gt;About Me&lt;h2&gt;</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-img">
+                        <div class="img-box">
+                            <img src="images/photo_2022-08-02_18-36-57.jpg" alt="About image">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I'm a computer Science and Engineering student and an aspiring software Engineer. I love to solve or atleast try to come up with a solution to real world problems with 
+                            the help of Technolodgy, the new technolodgies rolling out everyday keeps me on edge. I'm a keen learner spending most of my time working on projects involving various
+                            tech stacks. I love competitve programming it's and i have a particular interest towards malware analysis and design. I love Open Source and have been contributer in various
+                            events thereby addying to my learning experiences.
+                        </p>
+                        <h3>Skills</h3>
+                        <div class="skills">
+                            <div class="skill-item">C++</div>
+                            <div class="skill-item">C</div>
+                            <div class="skill-item">Html</div>
+                            <div class="skill-item">CSS</div>
+                            <div class="skill-item">Javascript</div>
+                            <div class="skill-item">Linux</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">Web-Developement</div>
+                            <div class="skill-item">Git and Github</div>
+                        </div>
+
+                        <div class="about-tabs">
+                            <button type="button" class="tab-item active" data-target="#education">education</button>
+                            <button type="button" class="tab-item" data-target="#experience">experience</button>
+                        </div>
+
+                        <!-- Education info start -->
+                        <div class="tab-content active" id="education">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2021 - 2025</span>
+                                    <h4>Bachelor Of Technolodgy - <span>Kalyani Government Engineering College</span></h4>
+                                    <p>Currently in my 2nd year of undergrad</p>
+                                    <p>Bachelor's degree in Computer Science</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2005 - 2020</span>
+                                    <h4>High School - <span>south point high school</span></h4>
+                                    <p>Computer Science, Maths, Physics, Chemistry, English</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience section -->
+
+                        <div class="tab-content" id="experience">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2013 -2016</span>
+                                    <h4>Lorem ipsum, dolor</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum neque nulla numquam voluptates ullam distinctio optio blanditiis odit iure fugiat.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2013 -2016</span>
+                                    <h4>Lorem ipsum, dolor</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum neque nulla numquam voluptates ullam distinctio optio blanditiis odit iure fugiat.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2013 -2016</span>
+                                    <h4>Lorem ipsum, dolor</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum neque nulla numquam voluptates ullam distinctio optio blanditiis odit iure fugiat.</p>
+                                </div>
+                            </div>  
+                        </div>
+
+                        <a href="cv/DebayanPradhan_CV.pdf" class="btn" download="cv/DebayanPradhan_CV.pdf">Download CV</a>
+                        <a href="#contact" class="btn link-item">contact me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>&lt;h2&gt;Projects&lt;/h2&gt;</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumnail">
+                            <img src="images/thumbnails/image-1.png" alt="project 1">
+                        </div>
+                        <h3 class="portfolio-item-title">Algorithm Visualiser</h3>
+                        <button type="button" class="btn view-project-button">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, odit? Molestias atque neque nesciunt, veniam praesentium placeat minima tempora, vero, assumenda beatae aliquid esse earum!</p>
+
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created <span>31 May 2020</span></li>
+                                    <li>Tech Stack Used <span>Lorem ipsum dolor sit amet.</span></li>
+                                    <li>View Live <span><a href="https://linktr.ee/debayanpradhan" target="_blank">https://linktr.ee/debayanpradhan</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumnail">
+                            <img src="images/thumbnails/image-2.png" alt="project 1">
+                        </div>
+                        <h3 class="portfolio-item-title">Password Manager Application</h3>
+                        <button type="button" class="btn view-project-button">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, odit? Molestias atque neque nesciunt, veniam praesentium placeat minima tempora, vero, assumenda beatae aliquid esse earum!</p>
+
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created <span>31 May 2020</span></li>
+                                    <li>Tech Stack Used <span>Lorem ipsum dolor sit amet.</span></li>
+                                    <li>View Live <span><a href="https://linktr.ee/debayanpradhan" target="_blank">https://linktr.ee/debayanpradhan</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumnail">
+                            <img src="images/thumbnails/image-3.png" alt="project 1">
+                        </div>
+                        <h3 class="portfolio-item-title">Portfolio 1.1</h3>
+                        <button type="button" class="btn view-project-button">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, odit? Molestias atque neque nesciunt, veniam praesentium placeat minima tempora, vero, assumenda beatae aliquid esse earum!</p>
+
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created <span>31 May 2020</span></li>
+                                    <li>Tech Stack Used <span>Lorem ipsum dolor sit amet.</span></li>
+                                    <li>View Live <span><a href="https://linktr.ee/debayanpradhan" target="_blank">https://linktr.ee/debayanpradhan</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumnail">
+                            <img src="images/thumbnails/image-4.png" alt="project 1">
+                        </div>
+                        <h3 class="portfolio-item-title">Music Player</h3>
+                        <button type="button" class="btn view-project-button">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, odit? Molestias atque neque nesciunt, veniam praesentium placeat minima tempora, vero, assumenda beatae aliquid esse earum!</p>
+
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created <span>31 May 2020</span></li>
+                                    <li>Tech Stack Used <span>Lorem ipsum dolor sit amet.</span></li>
+                                    <li>View Live <span><a href="https://phoenix-031.github.io/Js_projects/music_player" target="_blank">Music Player</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumnail">
+                            <img src="images/thumbnails/image-5.png" alt="project 1">
+                        </div>
+                        <h3 class="portfolio-item-title">ToDo List App</h3>
+                        <button type="button" class="btn view-project-button">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, odit? Molestias atque neque nesciunt, veniam praesentium placeat minima tempora, vero, assumenda beatae aliquid esse earum!</p>
+
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created <span>31 May 2020</span></li>
+                                    <li>Tech Stack Used <span>Lorem ipsum dolor sit amet.</span></li>
+                                    <li>View Live <span><a href="https://phoenix-031.github.io/Js_projects/tdo-list" target="_blank">To-Do App</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumnail">
+                            <img src="images/thumbnails/image-6.png" alt="project 1">
+                        </div>
+                        <h3 class="portfolio-item-title">LinkIt(LinkTree Clone)</h3>
+                        <button type="button" class="btn view-project-button">View Project</button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, odit? Molestias atque neque nesciunt, veniam praesentium placeat minima tempora, vero, assumenda beatae aliquid esse earum!</p>
+
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created: <span>31 May 2020</span></li>
+                                    <li>Tech Stack Used: <span>Loremdhur terrki amet.</span></li>
+                                    <li>View Live: <span><a href="https://phoenix-031.github.io/Web_Projects/link_tree_clone/index.html
+                                        " target="_blank">LinkIt</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section  -->
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="row .align-items-center">
+                    <div class="section-title">
+                        <h2>&lt;h2&gt;Contact Me&lt;/h2&gt;</h2>
+                    </div>
+                </div>
+                <div class="row .align-items-center">
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="row .align-items-center">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Name" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Email" class="input-control">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <textarea class="input-control" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <button type="button" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <h3>Email</h3>
+                            <p><a href="">pradhandebayan@gmail.com</a></p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>Phone</h3>
+                            <p><a href="">pradhandebayan@gmail.com</a></p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>Follow Me</h3>
+                            <div class="social-links">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-medium"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Portfolio details card -->
+    <div class="portfolio-popup">
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <button type="button" class="btn pp-close"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <div class="pp-thumbnail">
+                        <img src="images/thumbnails/Screenshot (321).png" alt="Thumbnail image">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
