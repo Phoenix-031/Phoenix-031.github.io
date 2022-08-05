@@ -323,7 +323,7 @@
                 </div>
                 <div class="row .align-items-center">
                     <div class="contact-form">
-                        <form action="#contact" class="ctf">
+                        <form on-submit = "sendinfo(); reset(); return false" action="#" class="ctf">
                             <div class="row .align-items-center">
                                 <div class="input-group">
                                     <input type="text" placeholder="Name" class="input-control" id="name-inp" required>
@@ -394,11 +394,13 @@
             To : 'pradhandebayan@gmail.com',
             From : document.getElementById('email-inp').value,
             Subject : document.getElementById('subject-inp').value,
-            Body :`Name: ${document.getElementById('name-inp').value} Message: ${document.getElementById('message-inp').value}`}).then(message => alert("message sent succesfully"));
+            Body :`Name: ${document.getElementById('name-inp').value} Message: ${document.getElementById('message-inp').value}`}).then(
+                message => alert(message)
+                );
         }
 
-        const frm = document.querySelector('ctf');
-        frm.addEventListener('submit', sendinfo);
+        // const frm = document.querySelector('ctf');
+        // frm.addEventListener('submit', sendinfo);
     </script>
     <script src="js/main.js"></script>
 </body>
