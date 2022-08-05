@@ -271,7 +271,7 @@ section.fade-out{
 
 section.active{
     display: block;
-    /* transition: fadeIn 0.5s ease-in-out forwards; */
+    transition: fadeIn 0.5s ease-in-out forwards;
 }
 
 /* .about-section{
