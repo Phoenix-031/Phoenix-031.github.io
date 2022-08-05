@@ -35,6 +35,48 @@ ul{
 }
 
 
+.bg-circle{
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+}
+
+.bg-circle div{
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bg-circle1{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    /* z-index: 5; */
+    top: 12%;
+    left: 10%;
+    animation: zoominout 8s linear infinite;
+    opacity: 0.3;
+}
+
+.bg-circle2{
+    height: 80px;
+    width: 80px;
+    background-color: var(--main-color);
+    /* z-index: 5; */
+    top: 50%;
+    left: 50%;
+    animation: yjump 4s linear infinite;
+    opacity: 0.5;
+
+}
+
+
+
+/* overlay section */
+
 .overlay{
     position: fixed;
     top: 0;
@@ -278,6 +320,26 @@ section.fade-out{
     }
     
 }
+
+@keyframes zoominout{
+    0%,100%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+
+@keyframes yjump {
+    0%,100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    
+}
+
 
 section.active{
     display: block;
