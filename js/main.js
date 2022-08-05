@@ -80,11 +80,3 @@ document.addEventListener('click', (e)=>{
         },500);
     }
 })
-
-// Lisent for cilck event on the contatc form
-
-// contact = document.querySelector('.submit-btn')
-
-// contact.addEventListener('click', (e) => {
-//     console.log(e.target);
-// })

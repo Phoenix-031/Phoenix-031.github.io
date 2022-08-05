@@ -315,22 +315,22 @@
                 </div>
                 <div class="row .align-items-center">
                     <div class="contact-form">
-                        <form action="">
+                        <form action="" onsubmit="sendinfo()">
                             <div class="row .align-items-center">
                                 <div class="input-group">
-                                    <input type="text" placeholder="Name" class="input-control" required>
+                                    <input type="text" placeholder="Name" class="input-control" id="name-inp" required>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Email" class="input-control" required>
+                                    <input type="text" placeholder="Email" class="input-control" id="email-inp" required>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Subject" class="input-control" required>
+                                    <input type="text" placeholder="Subject" class="input-control" id="subject-inp" required>
                                 </div>
                                 <div class="input-group">
-                                    <textarea class="input-control" placeholder="Message" required></textarea>
+                                    <textarea class="input-control" placeholder="Message" id="message-inp" required></textarea>
                                 </div>
                                 <div class="submit-btn">
-                                    <button type="button" class="btn">Send Message</button>
+                                    <button type="submit" class="btn" id="submit-form">Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -376,6 +376,19 @@
         </div>
 
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendinfo(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "jarvisai31@gmail.com",
+            Password : "nihvaacqrvhyjaok",
+            To : 'pradhandebayan@gmail.com',
+            From : document.getElementById('email-inp').value,
+            Subject : document.getElementById('subject-inp').value,
+            Body :`Name: ${document.getElementById('name-inp').value} Message: ${document.getElementById('message-inp').value}`}).then(message => alert("message sent succesfully"));
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
