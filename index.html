@@ -315,7 +315,7 @@
                 </div>
                 <div class="row .align-items-center">
                     <div class="contact-form">
-                        <form action="#">
+                        <form action="#contact" class="ctf">
                             <div class="row .align-items-center">
                                 <div class="input-group">
                                     <input type="text" placeholder="Name" class="input-control" id="name-inp" required>
@@ -389,7 +389,7 @@
             Body :`Name: ${document.getElementById('name-inp').value} Message: ${document.getElementById('message-inp').value}`}).then(message => alert("message sent succesfully"));
         }
 
-        const frm = document.querySelector('.contact-form');
+        const frm = document.querySelector('ctf');
         frm.addEventListener('submit', sendinfo);
     </script>
     <script src="js/main.js"></script>
