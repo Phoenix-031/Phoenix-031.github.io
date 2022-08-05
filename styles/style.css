@@ -1,8 +1,4 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Niconne&family=Poppins:wght@400;600;700;800&family=Roboto:wght@400;700&family=Uchen&display=swap');
-
 
 
 :root{
@@ -148,7 +144,7 @@ ul{
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .header.active .nav-inner{
