@@ -12,7 +12,7 @@
     --white: #ffffff;
     --white-alpha-40: rgba(255,255,255,0.40);
     --white-alpha-25: rgba(255,255,255,0.25);
-    --backdrop-filter-blur: blur(5px);
+    --backdrop-filter-blur: blur(15px);
 }
 
 
@@ -34,6 +34,36 @@ ul{
     box-sizing: border-box;
 }
 
+
+.quick-links{
+    position: fixed;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transform: translateY(100%);
+}
+
+.quick-links li{
+    list-style: none;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: -4px -4px 8px rgba(249, 226, 240, 0.712), 4px 4px 7px rgba(38, 37, 37, 0.3);
+}
+
+.quick-links a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #070532;
+}
+
+
+/* circles section */
 
 .bg-circle{
     width: calc(100% - 30px);
@@ -294,13 +324,14 @@ img{
 }
 
 section{
-    background-color: var(--white-alpha-25);
+    background: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
     border: 1px solid var(--white-alpha-40);
     min-height: calc(100vh - 70px);;
     border-radius: 30px;
     align-items: center;
     backdrop-filter: var(--backdrop-filter-blur);
     display: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
 }
 
 section.fade-out{
@@ -533,7 +564,34 @@ section.active{
     font-size: 40px;
     text-transform: capitalize;
     padding-top: 10px;
+    margin-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.section-title h2::before{
+    position: absolute;
+    content: '<h2>';
+    text-transform: lowercase;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-35px);
+    top: 0;
+    left: 30%;
+    font-size: 2rem;
+}
+
+
+.section-title h2::after{
+    position: absolute;
+    content: '</h2>';
+    text-transform: lowercase;
+    width: 10px;
+    height: 10px;
+    font-size: 2rem;
+    transform: translateY(40px);
+    top: 0;
+    right: 35%;
 }
 
 .about-img{
@@ -562,6 +620,7 @@ section.active{
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .about-text h3{
