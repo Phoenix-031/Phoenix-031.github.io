@@ -298,7 +298,6 @@ section.active{
 
 .row{
     display: flex;
-    /* align-items: center; */
     flex-wrap: wrap;
 }
 
@@ -771,11 +770,6 @@ button{
     text-transform: capitalize;
     margin: 0 0 5px;
 }
-
-/* .contact-info-item .social-links{
-    font-size: 30px;
-    padding: 5px;
-} */
 
 .contact-info-item .social-links a{
     margin: 0 10px;
