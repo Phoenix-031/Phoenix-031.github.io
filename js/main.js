@@ -8,7 +8,6 @@ tabcontainer.addEventListener('click', (e) =>{
         e.target.classList.add('active');
 
         const target = e.target.getAttribute("data-target");
-        // console.log(target);
         aboutsection.querySelector(".tab-content.active").classList.remove("active");
         aboutsection.querySelector(target).classList.add("active");
     }
@@ -19,8 +18,6 @@ document.addEventListener('keyup', (e) =>{
         togglePortfolio();
     }
 })    
-
-
 
 document.addEventListener('click', (e) =>{
     if(e.target.classList.contains("view-project-button")){
