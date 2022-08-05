@@ -264,6 +264,14 @@ h1,h2{
     font-weight: 600;
 }
 
+h3,h4,h5,h6{
+    font-weight: 600;
+}
+
+.sec-padding{
+    padding: 80px 0;
+}
+
 body.hide-scrolling{
     overflow-y: hidden;
 }
@@ -940,5 +948,98 @@ button{
     }
     75%{
         color: white;
+    }
+}
+
+
+/* Responsive part */
+
+
+@media (max-width: 991px){
+    .container{
+        padding: 0;
+    }
+
+    .home-image,.home-text{
+        width: 100%;
+
+    }
+
+    .home-text{
+        text-align: center;
+    }
+
+    .home-image{
+        order: -1;
+    }
+
+    .home-image .img-box{
+        max-width: 300px;
+    }
+
+    .home-text .btn{
+        margin: 0 7px 15px;
+    }
+
+    .portfolio-item{
+        width: calc(50% - 30px);
+    }
+
+}
+
+@media (max-width: 767px){
+
+
+    .contact-form,.contact-info,
+    .about-text,.about-img{
+        width: 100%;
+             
+    }
+    .about-text{
+        margin-top: 30px;
+    }
+    
+    .portfolio-item{
+        width: calc(100% - 30px);
+    }
+
+    .pp-inner{
+        padding: 30px 15px;
+    }
+
+    .contact-info{
+        margin-top: 15px;
+    }
+
+    .contact-info-item{
+        padding: 0;
+    }
+
+    .portfolio-section .section-title{
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 575px){
+
+    .section-title h2,
+    .header .nav-inner ul li a{
+        font-size: 30px;
+    }
+
+    .home-text h1{
+        font-size: 30px;
+    }
+    .home-text h2{
+        font-size: 18px;
+    }
+
+    .portfolio-item{
+        width: calc(100% - 30px);
+    }
+
+    .pp-header h3{
+        font-size: 20px;
     }
 }
