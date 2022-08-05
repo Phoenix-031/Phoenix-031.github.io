@@ -14,25 +14,22 @@ tabcontainer.addEventListener('click', (e) =>{
     }
 });
 
+document.addEventListener('keyup', (e) =>{
+    if(e.key == "Escape" && document.querySelector('.portfolio-popup').classList.contains("open")){
+        togglePortfolio();
+    }
+})    
+
+
 
 document.addEventListener('click', (e) =>{
     if(e.target.classList.contains("view-project-button")){
         togglePortfolio();
-        // document.querySelector('.portfolio-popup').style.visibility = "visible";
         portfoliodetails(e.target.parentElement);
     }
 })    
 
-
-document.addEventListener('keyup', (e) =>{
-    if(e.target.classList.contains("view-project-button") && e.key == "Escape" && document.querySelector('.portfolio-popup').classList.contains("open")){
-        togglePortfolio();
-        // document.querySelector('.portfolio-popup').style.visibility = "visible";
-    }
-})    
-
 function togglePortfolio(){
-    // document.querySelector('.portfolio-popup').style.visibility = "visible";
     document.querySelector('.portfolio-popup').classList.toggle("open");
     document.body.classList.toggle('hide-scrolling');
     document.querySelector(".main").classList.toggle("fade-out");

@@ -221,8 +221,6 @@ section{
     border: 1px solid var(--white-alpha-40);
     min-height: calc(100vh - 70px);;
     border-radius: 30px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     align-items: center;
     backdrop-filter: var(--backdrop-filter-blur);
     display: none;
@@ -256,7 +254,7 @@ section.fade-out{
 
 section.active{
     display: block;
-    transition: fadeIn 0.5s ease-in-out forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 /* .about-section{
