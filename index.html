@@ -315,7 +315,7 @@
                 </div>
                 <div class="row .align-items-center">
                     <div class="contact-form">
-                        <form action="" onsubmit="sendinfo()">
+                        <form action="#" class="contact-form">
                             <div class="row .align-items-center">
                                 <div class="input-group">
                                     <input type="text" placeholder="Name" class="input-control" id="name-inp" required>
@@ -388,6 +388,9 @@
             Subject : document.getElementById('subject-inp').value,
             Body :`Name: ${document.getElementById('name-inp').value} Message: ${document.getElementById('message-inp').value}`}).then(message => alert("message sent succesfully"));
         }
+
+        const frm = document.querySelector('.contact-form');
+        frm.addEventListener('submit', sendinfo);
     </script>
     <script src="js/main.js"></script>
 </body>
