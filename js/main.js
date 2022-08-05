@@ -48,6 +48,7 @@ navtoggler.addEventListener('click', ()=>{
 
     hidesection();
     toggleon();
+    document.body.classList.toggle("hide-scrolling")
 });
 
 function hidesection(){
@@ -62,6 +63,7 @@ function toggleon(){
 document.addEventListener('click', (e)=>{
     if(e.target.classList.contains('link-item') && e.target.hash !== ""){
         document.querySelector('.overlay').classList.add("active");
+        navtoggler.classList.add("hide");
         if(e.target.classList.contains('nav-item')){
             toggleon();
         }
@@ -72,7 +74,9 @@ document.addEventListener('click', (e)=>{
             document.querySelector('section.active').classList.remove("active","fade-out")
             document.querySelector(e.target.hash).classList.add("active");
             window.scrollTo(0,0);
+            document.body.classList.remove('hide-scrolling');
             document.querySelector('.overlay').classList.remove("active");
+            navtoggler.classList.remove("hide");
         },500);
     }
 })

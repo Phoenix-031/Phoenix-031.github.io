@@ -78,6 +78,14 @@ ul{
     align-items: center;
     justify-content: center;
     z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out ;
+    margin: 0 15px ;
+}
+
+.header .nav-toggle.hide{
+    opacity: 0;
+    transition: none;
 }
 
 .flex-end{
@@ -127,12 +135,14 @@ ul{
     height: 100%;
     width: 100%;
     visibility: hidden;
+    display: none;
     padding: 35px 15px;
     overflow-y: auto;
 }
 
 .header.active .nav{
     visibility: visible;
+    display: block;
 }
 
 .header .nav-inner{
@@ -149,11 +159,11 @@ ul{
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .header.active .nav-inner{
-    opacity: 1;;
+    opacity: 1;
 }
 
 .header .nav-inner ul li{
@@ -205,7 +215,7 @@ body{
     background-attachment: fixed;
     overflow-x: hidden;
     line-height: 1.5;
-    padding: 5vh 15px;
+    padding: 35px 15px;
 }
 
 h1,h2{
