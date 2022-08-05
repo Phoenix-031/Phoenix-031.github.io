@@ -60,7 +60,7 @@ function toggleon(){
 
 document.addEventListener('click', (e)=>{
     if(e.target.classList.contains('link-item') && e.target.hash !== ""){
-        document,querySelector('.overlay').classList.add("active");
+        document.querySelector('.overlay').classList.add("active");
         if(e.target.classList.contains('nav-item')){
             toggleon();
         }
@@ -70,8 +70,8 @@ document.addEventListener('click', (e)=>{
         setTimeout(() =>{
             document.querySelector('section.active').classList.remove("active","fade-out")
             document.querySelector(e.target.hash).classList.add("active");
-            document,querySelector('.overlay').classList.add("active");
             window.scrollTo(0,0);
+            document.querySelector('.overlay').classList.remove("active");
         },500);
     }
 })
