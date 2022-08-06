@@ -641,6 +641,7 @@ section.active{
     border-radius: 15px;
     margin: 0 15px 15px 0;
     border: 1px solid var(--white-alpha-40);
+    box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.712), 4px 4px 7px rgba(30, 29, 29, 0.3);
 }
 
 .about-tabs{
@@ -943,6 +944,7 @@ button{
     columns: var(--blue-dark);
     border: 1px solid transparent;
     transition: border-color 0.3s ease-in-out;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.712),inset 4px 4px 7px rgba(38, 37, 37, 0.3);
 }
 
 .contact-form .input-control::placeholder{
@@ -1101,5 +1103,18 @@ button{
 
     .pp-header h3{
         font-size: 20px;
+    }
+}
+
+@media (max-width: 1400px){
+
+    .quick-links{
+        transform: translateX(100%);
+        z-index: 400;
+    }
+
+    .quick-links ul{
+        display: flex;
+        flex-direction: row;
     }
 }
