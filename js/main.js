@@ -80,3 +80,30 @@ document.addEventListener('click', (e)=>{
         },500);
     }
 })
+
+const subbtn = document.getElementById('submit-form')
+
+subbtn.addEventListener('click',async (e)=>{
+    e.preventDefault()
+
+    const user_name = document.getElementById('name-inp').value
+    const user_email = document.getElementById('email-inp').value
+    const user_subject = document.getElementById('subject-inp').value
+    const user_message = document.getElementById('message-inp').value
+
+    const form_data = {user_name,user_email,user_subject,user_message}
+
+    const res = await fetch('https://stormy-forest-73172.herokuapp.com/api/contact',{
+        method:'POST',
+        mode:'cors',
+        headers:{
+            'Content-type':'application/json'
+        },
+        body:JSON.stringify(form_data)
+    }).then(res=>res.json())
+    .then(data=>{
+        if(data.success){
+            document.querySelector('.ctf').reset()
+        }
+    })
+})

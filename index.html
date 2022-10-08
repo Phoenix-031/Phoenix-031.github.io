@@ -323,23 +323,21 @@
                 </div>
                 <div class="row .align-items-center">
                     <div class="contact-form">
-                        <form on-submit = "sendinfo(); reset(); return false" action="#" class="ctf">
+                        <form class="ctf">
                             <div class="row .align-items-center">
                                 <div class="input-group">
                                     <input type="text" placeholder="Name" class="input-control" id="name-inp" required>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Email" class="input-control" id="email-inp" required>
+                                    <input type="email" placeholder="Email" class="input-control" id="email-inp" required>
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" placeholder="Subject" class="input-control" id="subject-inp" required>
+                                    <input type="text" placeholder="Subject" class="input-control" id="subject-inp">
                                 </div>
                                 <div class="input-group">
                                     <textarea class="input-control" placeholder="Message" id="message-inp" required></textarea>
                                 </div>
-                                <div class="submit-btn">
-                                    <button type="submit" class="btn" id="submit-form">Send Message</button>
-                                </div>
+                                <button class="btn" id="submit-form">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -382,26 +380,8 @@
                 <div class="pp-body"></div>
             </div>
         </div>
-
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendinfo(){
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "alexhembram03@gmail.com",
-            Password : "mailpassword_alex_idon't know",
-            To : 'pradhandebayan@gmail.com',
-            From : document.getElementById('email-inp').value,
-            Subject : document.getElementById('subject-inp').value,
-            Body :`Name: ${document.getElementById('name-inp').value} Message: ${document.getElementById('message-inp').value}`}).then(
-                message => alert(message)
-                );
-        }
 
-        // const frm = document.querySelector('ctf');
-        // frm.addEventListener('submit', sendinfo);
-    </script>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
